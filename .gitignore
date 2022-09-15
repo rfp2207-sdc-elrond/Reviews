@@ -1,0 +1,4 @@
+node_modules
+ETL.js
+/server/databases/initLoad
+.env

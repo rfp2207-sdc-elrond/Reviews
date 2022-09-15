@@ -1,0 +1,39 @@
+{
+  "name": "sdc_reviews",
+  "version": "1.0.0",
+  "description": "system design capstone",
+  "main": "./server/app.js",
+  "dependencies": {
+    "csv-parse": "^5.3.0",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "mongodb": "^4.9.1",
+    "mongoose": "^6.6.0",
+    "node": "^18.9.0",
+    "nodemon": "^2.0.19",
+    "path": "^0.12.7",
+    "pg": "^8.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  },
+  "scripts": {
+    "test": "test",
+    "start": "nodemon ./server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Selis9/SDC_Reviews.git"
+  },
+  "author": "tony kang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Selis9/SDC_Reviews/issues"
+  },
+  "homepage": "https://github.com/Selis9/SDC_Reviews#readme"
+}
