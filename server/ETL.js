@@ -21,15 +21,15 @@ const db = pgp(cn);
 const initializeDB = async() => {
     await db.any(`
       COPY reviews (id,product_id,rating,date,summary,body,recommend,reported,reviewer_name,reviewer_email,response,helpfulness)
-        FROM '/Users/tonykang/Hack Reactor SEI/SDC_Reviews/server/databases/initLoad/reviews.csv' csv header;
+        FROM './databases/initLoad/reviews.csv' csv header;
     `)
     await db.any(`
-        COPY characteristics (id,characteristic_id,review_id,value)
-          FROM '/Users/tonykang/Hack Reactor SEI/SDC_Reviews/server/databases/initLoad/characteristic_reviews.csv' csv header;
+      COPY characteristics (id,characteristic_id,review_id,value)
+        FROM './databases/initLoad/characteristic_reviews.csv' csv header;
     `)
     await db.any(`
-          COPY photos (id,review_id,url)
-            FROM '/Users/tonykang/Hack Reactor SEI/SDC_Reviews/server/databases/initLoad/reviews_photos.csv' csv header;
+      COPY photos (id,review_id,url)
+        FROM './databases/initLoad/reviews_photos.csv' csv header;
     `)
 };
 
