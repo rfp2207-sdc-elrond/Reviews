@@ -1,5 +1,5 @@
 var express = require('express');
-const { processLineByLineCharacteristics } = require('./ETL');
+const { initializeDB } = require('./ETL');
 
 // Router
 var router = require('./routes.js');
@@ -21,5 +21,3 @@ if (!module.parent) {
   app.listen(app.get('port'));
   console.log('Listening on', app.get('port'));
 }
-
-processLineByLineCharacteristics();
