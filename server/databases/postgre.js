@@ -24,21 +24,21 @@ const initializeDB = async() => {
         id SERIAL PRIMARY KEY,
         product_id INTEGER NOT NULL,
         rating  INTEGER NOT NULL,
-        date DATE NOT NULL,
-        summary VARCHAR(50) NOT NULL,
-        body VARCHAR(255),
-        recommended BOOLEAN,
+        date VARCHAR(50) NOT NULL,
+        summary VARCHAR(250) NOT NULL,
+        body VARCHAR(1000),
+        recommend BOOLEAN,
         reported BOOLEAN,
-        reviewer_name VARCHAR(50),
-        reviewer_email VARCHAR(50),
-        response VARCHAR(50),
+        reviewer_name VARCHAR(250),
+        reviewer_email VARCHAR(250),
+        response VARCHAR(250),
         helpfulness INTEGER
       );
 
       CREATE TABLE IF NOT EXISTS photos (
         id SERIAL PRIMARY KEY,
         review_id INTEGER NOT NULL REFERENCES reviews(id),
-        url VARCHAR(100) NOT NULL
+        url VARCHAR(250) NOT NULL
       );
 
       CREATE TABLE IF NOT EXISTS characteristics (
