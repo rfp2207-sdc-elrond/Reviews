@@ -1,5 +1,4 @@
 var express = require('express');
-const { initializeDB } = require('./ETL');
 
 // Router
 var router = require('./routes.js');
@@ -14,7 +13,7 @@ app.set('port', 3000);
 app.use(express.json());
 
 // Set up our routes
-app.use('/reviews', router);
+app.use('/', router);
 
 // If we are being run directly, run the server.
 if (!module.parent) {

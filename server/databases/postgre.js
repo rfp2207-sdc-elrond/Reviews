@@ -35,13 +35,13 @@ const initializeDB = async() => {
         helpfulness INTEGER
       );
 
-      CREATE TABLE IF NOT EXISTS photos (
+      CREATE TABLE IF NOT EXISTS reviews_photos (
         id SERIAL PRIMARY KEY,
         review_id INTEGER NOT NULL REFERENCES reviews(id),
         url VARCHAR(250) NOT NULL
       );
 
-      CREATE TABLE IF NOT EXISTS characteristics (
+      CREATE TABLE IF NOT EXISTS reviews_characteristics (
         id SERIAL PRIMARY KEY,
         characteristic_id INTEGER NOT NULL,
         review_id INTEGER NOT NULL REFERENCES reviews(id),
@@ -49,5 +49,13 @@ const initializeDB = async() => {
       );
       `)
 };
-
 initializeDB();
+
+const get = (query, params, callback) => {
+  db.any(query, params)
+    .then((data) => callback(null, data))
+    .catch((err) => callback(err, null))
+}
+
+module.exports.get = get;
+

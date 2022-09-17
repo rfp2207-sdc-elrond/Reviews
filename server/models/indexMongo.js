@@ -1,6 +1,6 @@
 const { Reviews, ReviewsPhotos, ReviewsCharacteristics } = require('../databases/mongodb.js')
 
-const saveInitReviews = (data, callback) => {
+const saveReviews = (data, callback) => {
   Reviews.create(data, (err, result) => {
     if (err) {
       console.log("MODELS ERROR")
@@ -12,7 +12,7 @@ const saveInitReviews = (data, callback) => {
   });
 }
 
-const saveInitPhotos = (data, callback) => {
+const savePhotos = (data, callback) => {
   ReviewsPhotos.create(data)((err, result) => {
     if (err) {
       console.log("MODELS ERROR")
@@ -24,7 +24,7 @@ const saveInitPhotos = (data, callback) => {
   });
 }
 
-const saveInitCharacteristics = (data, callback) => {
+const saveCharacteristics = (data, callback) => {
   ReviewsCharacteristics.create(data, (err, result) => {
     if (err) {
       console.log("MODELS ERROR")
@@ -36,6 +36,6 @@ const saveInitCharacteristics = (data, callback) => {
   });
 }
 
-module.exports.saveInitReviews = saveInitReviews;
-module.exports.saveInitPhotos = saveInitPhotos;
-module.exports.saveInitCharacteristics = saveInitCharacteristics;
+module.exports.saveReviews = saveReviews;
+module.exports.savePhotos = savePhotos;
+module.exports.saveCharacteristics = saveCharacteristics;
