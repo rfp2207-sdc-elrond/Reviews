@@ -27,12 +27,12 @@ const initializeDB = async() => {
         date VARCHAR(50) NOT NULL,
         summary VARCHAR(250) NOT NULL,
         body VARCHAR(1000),
-        recommend BOOLEAN,
-        reported BOOLEAN,
+        recommend BOOLEAN DEFAULT false,
+        reported BOOLEAN DEFAULT false,
         reviewer_name VARCHAR(250),
         reviewer_email VARCHAR(250),
         response VARCHAR(250),
-        helpfulness INTEGER
+        helpfulness INTEGER DEFAULT 0
       );
 
       CREATE TABLE IF NOT EXISTS reviews_photos (
@@ -47,15 +47,24 @@ const initializeDB = async() => {
         review_id INTEGER NOT NULL REFERENCES reviews(id),
         value INTEGER NOT NULL
       );
+
+      CREATE TABLE IF NOT EXISTS characteristics (
+        id SERIAL PRIMARY KEY,
+        product_id INTEGER NOT NULL REFERENCES reviews(product_id),
+        name VARCHAR(50) NOT NULL
+      );
       `)
 };
 initializeDB();
 
-const get = (query, params, callback) => {
-  db.any(query, params)
-    .then((data) => callback(null, data))
-    .catch((err) => callback(err, null))
+const postgreQuery = async (query, params) => {
+  try {
+    return await db.any(query, params)
+  } catch (error) {
+    console.log(error)
+  }
 }
 
-module.exports.get = get;
+module.exports.postgreQuery = postgreQuery;
+
 

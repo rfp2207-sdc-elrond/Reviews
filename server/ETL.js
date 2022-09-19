@@ -31,6 +31,10 @@ const initializeDB = async() => {
       COPY photos (id,review_id,url)
         FROM '/Users/tonykang/Hack Reactor SEI/SDC_Reviews/server/databases/initLoad/reviews_photos.csv' csv header;
     `)
+    await db.any(`
+    COPY characteristics (id,product_id,name)
+      FROM '/Users/tonykang/Hack Reactor SEI/SDC_Reviews/server/databases/initLoad/characteristics.csv' csv header;
+  `)
 };
 
 initializeDB();

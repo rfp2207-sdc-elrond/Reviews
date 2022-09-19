@@ -10,12 +10,13 @@ var router = require('express').Router();
 // router.post('/characteristics', controllerMongo.postCharacteristics);
 
 // Postgre
-router.get('/reviews', controllerPostgre.getReviews);
-router.get('/reviews/:product_id', controllerPostgre.getProductReviews)
 router.get('/reviews/meta/:product_id', controllerPostgre.getProductMeta)
+router.get('/reviews/:product_id', controllerPostgre.getProductReviews)
+router.get('/reviews', controllerPostgre.getProductReviews);
 
 router.post('/reviews', controllerPostgre.postReviews);
 
-router.put('/reviews', controllerPostgre.putReviews);
+router.put('/reviews/:review_id/helpful', controllerPostgre.putReviewsHelpful);
+router.put('/reviews/:review_id/report', controllerPostgre.putReviewsReport);
 
 module.exports = router;
