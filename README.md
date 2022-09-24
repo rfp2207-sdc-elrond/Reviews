@@ -17,14 +17,6 @@ Install Dependencies.
 
 For running the app in development mode.
 
-### `"npm run build"`,
-
-Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes. Your app will be ready to deploy!
-
-### `"npm run test"`,
-
-Launches the test runner in the interactive watch mode.
-
 ### `npm start"`,
 
 The app is built using `create-react-app` so this command Runs the app in Development mode. Open [http://localhost:8080](http://localhost:8080) to view it in the browser. You also need to run the server file as well to completely run the app. The page will reload if you make edits.
@@ -35,6 +27,11 @@ You will also see any lint errors in the console.
 
 - JavaScript
 - NPM
+- Postgres
+- MongoDB
+- Mongoose
+- Express
+- Node
 
 ## Future Updates
 
@@ -56,7 +53,6 @@ Contributions, issues, and feature requests are welcome!
 Give a ⭐️ if you like this project!
 
 ## Technologies and Resources
-![image]( https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB )
 ![image]( https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white )
 ![image]( https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white )
 ![image]( https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white )
@@ -64,8 +60,6 @@ Give a ⭐️ if you like this project!
 ![image]( https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white )
 ![image]( https://img.shields.io/badge/VisualStudioCode-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white )
 ![image]( https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E )
-![image](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
-![image]( https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white )
 ![image]( https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white )
 
 
