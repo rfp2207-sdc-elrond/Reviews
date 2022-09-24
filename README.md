@@ -1,20 +1,9 @@
-# Boyz2Men Frontend Capstone Project
-<h1 align="center">Odin</h1>
-
-![Preview](/Screen1.gif)
-
-<p align="center">Educational Capstone Project</p>
+# Reviews Data
+<h1 align="center">Reviews</h1>
 
 ## Links
 
-- [Repo](https://github.com/rfp2207boyz2men/frontendcapstone "Front End Capstone Repo")
-
-- [Bugs](https://github.com/rfp2207boyz2men/frontendcapstone/issues "Issues Page")
-
-- API - Educational Private API (via Heroku)
-
 ## Screenshots
-
 
 ## Available Commands
 
@@ -46,20 +35,11 @@ You will also see any lint errors in the console.
 
 - JavaScript
 - NPM
-- Webpack
-- HTML
-- CSS
-- React
-- Stylized Components
 
 ## Future Updates
 
-- [ ] Checkout cart
-- [ ] Related Product Cards Image Gallery on Hover
-
-## Authors
-
-**Hack Reactor Team BoyzIIMen**
+- [ ] 
+- [ ] 
 
 Tony Kang
 
@@ -68,30 +48,6 @@ Tony Kang
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tony.andrew.kang@gmail.com)
 
 [![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tkang89/)
-
-Dan Tran
-
-[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Dan-T-Tran)
-
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dan.t.tran505@gmail.com)
-
-[![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dan-tran-259ba7231/)
-
-Paul Ko
-
-[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kopau)
-
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ko.paul.824@gmail.com)
-
-[![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/paul-ko/)
-
-Manuel Tiburcio
-
-[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/manueltiburcio)
-
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:manuelmtiburcio@gmail.com)
-
-[![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/manuel-tiburcio-b1399266/)
 
 ## 🤝 Support
 
